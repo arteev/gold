@@ -1,25 +1,15 @@
-# gold
+package main
 
-[![Build Status](https://travis-ci.org/arteev/gold.svg?branch=master)](https://travis-ci.org/arteev/gold)
+import (
+	"log"
 
-Library Golang Line Display
+	_ "github.com/arteev/td"
+	"github.com/arteev/td/display"
+	"github.com/arteev/td/firich"
+	"golang.org/x/text/encoding/charmap"
+)
 
-
-Description
------------
-
-Library line displays based on Firich,Datecs (serial port)
-
-
-Supported 
----------    
-    [+] Firich Command (partially)
-    [ ] Datecs Command
-
-
-Quick start
------------
-```
+func main() {
 	config := map[string]interface{}{
 		"Name": "/dev/ttyUSB0",
 		"Baud": 9600,
@@ -35,19 +25,8 @@ Quick start
 	defer dsp.Close()
 	dsp.SetEncoding(charmap.CodePage866)
 	if err := dsp.Init(); err != nil {
-		fmt.Println(err)
+		log.Fatal(err)
 	}
 	dsp.PrintRow(1, "Price:10$ Quant:2")
 	dsp.PrintRow(2, "Total:20$")
-
-```
-
-License
--------
-
-  MIT
-
-Author
-------
-
-Arteev Aleksey
+}

@@ -6,7 +6,7 @@ import (
 
 	"fmt"
 
-	"github.com/arteev/td/driver"
+	"github.com/arteev/gold/driver"
 )
 
 /*

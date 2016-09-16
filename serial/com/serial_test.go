@@ -7,7 +7,7 @@ import (
 
 	"bytes"
 
-	"github.com/arteev/td/driver"
+	"github.com/arteev/gold/driver"
 	"golang.org/x/text/encoding/charmap"
 )
 

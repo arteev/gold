@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/arteev/td/driver"
+	"github.com/arteev/gold/driver"
 )
 
 type mockDriver struct {

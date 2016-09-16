@@ -1,9 +1,9 @@
 package serial
 
 import (
-	"github.com/arteev/td/display"
-	"github.com/arteev/td/driver"
-	"github.com/arteev/td/serial/com"
+	"github.com/arteev/gold/display"
+	"github.com/arteev/gold/driver"
+	"github.com/arteev/gold/serial/com"
 	"github.com/tarm/serial"
 )
 

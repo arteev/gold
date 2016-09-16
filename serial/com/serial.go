@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/arteev/td/driver"
+	"github.com/arteev/gold/driver"
 
 	"golang.org/x/text/encoding"
 	"golang.org/x/text/transform"

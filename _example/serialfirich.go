@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 
-	_ "github.com/arteev/td"
-	"github.com/arteev/td/display"
-	"github.com/arteev/td/firich"
+	_ "github.com/arteev/gold"
+	"github.com/arteev/gold/display"
+	"github.com/arteev/gold/firich"
 	"golang.org/x/text/encoding/charmap"
 )
 
